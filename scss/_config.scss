@@ -1,0 +1,17 @@
+// Variables
+$website-width: 1300px;
+$main-color: #f3e367;
+$light-color: #929d9e;
+$meduim-color: #7f8688;
+$dark-color: #333;
+$bg-image: url("../img/showcase3.jpg");
+
+// Set Text color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
